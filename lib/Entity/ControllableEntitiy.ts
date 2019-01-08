@@ -72,7 +72,6 @@ abstract class ControllableEntity extends Entity {
 
   draw = (renderer: Renderer) => {
     this.handleAnimation()
-
     this.facing = vectorToDirection(this.direction) || this.facing
 
     this.velocity = vector2Add(
